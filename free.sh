@@ -9,7 +9,7 @@ echo $FREE
 echo $LOAD
 TOTAL=$( awk '/MemTotal/ { print $2 }'  /proc/meminfo)
 echo $TOTAL
-FREESPACE=$(df / | grep / | awk '{ print $4}')
-TOTALSPACE=$(df / | grep / | awk '{ print $2}')
+FREESPACE=$(df / | grep /root | awk '{ print $4}')
+TOTALSPACE=$(df / | grep /root | awk '{ print $2}')
 echo $FREESPACE
 echo $TOTALSPACE
